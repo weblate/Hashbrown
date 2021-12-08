@@ -3,7 +3,7 @@
 TRANSLATION_DIR_NAME = "translations"
 
 translations_dir = Dir.open(TRANSLATION_DIR_NAME)
-translations = translations_dir.children.reject! { |x| x == "hashbrown.yaml" || !x.ends_with?(".yaml") }
+translations = translations_dir.children.reject! { |x| x == "collision.yaml" || !x.ends_with?(".yaml") }
 
 thanks = Hash(String, Array(String)).new
 

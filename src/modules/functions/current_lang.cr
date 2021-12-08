@@ -1,7 +1,7 @@
 # Gets the current set language by reading the relevant env vars
 # Should accept all formats (eg. el:en_US.UTF-8:ru.UTF-8)
 
-module Hashbrown
+module Collision
   extend self
 
   def current_language : String

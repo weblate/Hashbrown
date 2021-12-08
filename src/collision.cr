@@ -8,13 +8,13 @@ require "./modules/views/tools/*"
 
 macro gen_hash(buttons)
   {
-  {% for hash, index in Hashbrown::HASH_FUNCTIONS %}
+  {% for hash, index in Collision::HASH_FUNCTIONS %}
     {{hash.upcase}} => {% if buttons %} Gtk::Button.cast(B_HS["copyBtn{{index + 1}}"]) {% else %} Gtk::Entry.cast(B_HS["textField{{index + 1}}"]) {% end %},
   {% end %}
   }
 end
 
-module Hashbrown
+module Collision
   extend self
 
   B_UI = Gtk::Builder.new_from_string(UI, UI.bytesize.to_i64)
@@ -50,5 +50,5 @@ module Hashbrown
 
   TEXT_FIELDS = gen_hash(false)
 
-  APP = Adw::Application.new("dev.geopjr.Hashbrown", Gio::ApplicationFlags::None)
+  APP = Adw::Application.new("dev.geopjr.Collision", Gio::ApplicationFlags::None)
 end

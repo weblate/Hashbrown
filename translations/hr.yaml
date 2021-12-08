@@ -1,6 +1,6 @@
-## Croatian translation for dev.geopjr.Hashbrown.
-## Copyright (C) 2021 THE dev.geopjjr.Hashbrown'S COPYRIGHT HOLDER
-## This file is distributed under the same license as the dev.geopjr.Hashbrown package.
+## Croatian translation for dev.geopjr.Collision.
+## Copyright (C) 2021 THE dev.geopjjr.Collision'S COPYRIGHT HOLDER
+## This file is distributed under the same license as the dev.geopjr.Collision package.
 ## Milo Ivir <mail@milotype.de>, 2021.
 
 ## Last-Translator: Milo Ivir <mail@milotype.de>
@@ -25,8 +25,8 @@ Menu: Izbornik
 # Menu item that opens a browser window to a hash function comparison table.
 Compare Hash Functions: Usporedi hash funkcije
 # Menu item that opens the about dialog.
-# Don't translate "Hashbrown".
-About Hashbrown: Hashbrown informacije
+# Don't translate "Collision".
+About Collision: Collision informacije
 # Tooltip for button & title for row.
 Verify: Provjeri
 # Subtitle for row.

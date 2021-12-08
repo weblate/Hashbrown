@@ -26,7 +26,7 @@
             </child>
             <child>
               <object class="GtkButton" id="copyBtn1">
-                <property name="tooltip-text" translatable="yes">HASHBROWN_(Copy)</property>
+                <property name="tooltip-text" translatable="yes">COLLISION_(Copy)</property>
                 <property name="icon-name">edit-copy-symbolic</property>
                 <property name="valign">center</property>
                 <style>
@@ -50,7 +50,7 @@
             </child>
             <child>
               <object class="GtkButton" id="copyBtn2">
-                <property name="tooltip-text" translatable="yes">HASHBROWN_(Copy)</property>
+                <property name="tooltip-text" translatable="yes">COLLISION_(Copy)</property>
                 <property name="icon-name">edit-copy-symbolic</property>
                 <property name="valign">center</property>
                 <style>
@@ -74,7 +74,7 @@
             </child>
             <child>
               <object class="GtkButton" id="copyBtn3">
-                <property name="tooltip-text" translatable="yes">HASHBROWN_(Copy)</property>
+                <property name="tooltip-text" translatable="yes">COLLISION_(Copy)</property>
                 <property name="icon-name">edit-copy-symbolic</property>
                 <property name="valign">center</property>
                 <style>
@@ -98,7 +98,7 @@
             </child>
             <child>
               <object class="GtkButton" id="copyBtn4">
-                <property name="tooltip-text" translatable="yes">HASHBROWN_(Copy)</property>
+                <property name="tooltip-text" translatable="yes">COLLISION_(Copy)</property>
                 <property name="icon-name">edit-copy-symbolic</property>
                 <property name="valign">center</property>
                 <style>

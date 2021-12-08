@@ -4,17 +4,17 @@
   <object class="AdwStatusPage" id="welcomer">
     <property name="vexpand">true</property>
     <property name="hexpand">true</property>
-    <property name="icon-name">dev.geopjr.Hashbrown-symbolic</property>
-    <property name="title">Hashbrown</property>
-    <property name="description" translatable="yes">HASHBROWN_(Check hashes for your files)</property>
+    <property name="icon-name">dev.geopjr.Collision-symbolic</property>
+    <property name="title">Collision</property>
+    <property name="description" translatable="yes">COLLISION_(Check hashes for your files)</property>
     <child>
       <object class="GtkButton" id="welcomeBtn">
         <property name="halign">center</property>
         <property name="child">
           <object class="AdwButtonContent">
             <property name="icon-name">document-open-symbolic</property>
-            <property name="label" translatable="yes">_HASHBROWN_(Open a File)</property>
-            <property name="tooltip-text" translatable="yes">HASHBROWN_(Open)...</property>
+            <property name="label" translatable="yes">_COLLISION_(Open a File)</property>
+            <property name="tooltip-text" translatable="yes">COLLISION_(Open)...</property>
             <property name="use-underline">True</property>
           </object>
         </property>
@@ -26,7 +26,7 @@
     </child>
   </object>
   <object class="GtkFileChooserNative" id="welcomerFileChooserNative">
-    <property name="title" translatable="yes">HASHBROWN_(Choose a File)</property>
+    <property name="title" translatable="yes">COLLISION_(Choose a File)</property>
     <property name="modal">1</property>
   </object>
 </interface>

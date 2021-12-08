@@ -1,6 +1,6 @@
-## German translations for dev.geopjr.Hashbrown package.
-## Copyright (C) 2021 THE dev.geopjr.Hashbrown'S COPYRIGHT HOLDER
-## This file is distributed under the same license as the dev.geopjr.Hashbrown package.
+## German translations for dev.geopjr.Collision package.
+## Copyright (C) 2021 THE dev.geopjr.Collision'S COPYRIGHT HOLDER
+## This file is distributed under the same license as the dev.geopjr.Collision package.
 ## Philipp Kiemle <philipp.kiemle@gmail.com>, 2021.
 ## Panagiotis Vasilopoulos <hello@alwayslivid.com>, 2021.
 ## Milo Ivir <mail@milotype.de>, 2021.
@@ -27,8 +27,8 @@ Menu: Menü
 # Menu item that opens a browser window to a hash function comparison table.
 Compare Hash Functions: Hash-Funktionen Vergleichen
 # Menu item that opens the about dialog.
-# Don't translate "Hashbrown".
-About Hashbrown: Info zu Hashbrown
+# Don't translate "Collision".
+About Collision: Info zu Collision
 # Tooltip for button & title for row.
 Verify: Verifiziere
 # Subtitle for row.

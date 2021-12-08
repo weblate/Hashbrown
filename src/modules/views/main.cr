@@ -1,4 +1,4 @@
-module Hashbrown
+module Collision
   @@main_window_id = 0_u32
 
   def activate(app : Adw::Application)
@@ -7,28 +7,28 @@ module Hashbrown
 
     window = Adw::ApplicationWindow.new(app)
     window.name = "mainWindow"
-    window.title = "Hashbrown"
+    window.title = "Collision"
     window.set_default_size(800, 432)
     window.width_request = 360
     window.height_request = 294
     @@main_window_id = window.id
 
-    Hashbrown.generate_headbar
+    Collision.generate_headbar
     root = Gtk::Widget.cast(B_UI["welcomer"])
 
     WINDOW_BOX.append(HEADERBAR)
     WINDOW_BOX.append(root)
 
-    Hashbrown.about_action(app)
-    Hashbrown.hashinfo_action(app)
+    Collision.about_action(app)
+    Collision.hashinfo_action(app)
 
     WELCOMER_FILE_CHOOSER_NATIVE.transient_for = window
 
     MAIN_FILE_CHOOSER_NATIVE.transient_for = window
     MAIN_FILE_CHOOSER_NATIVE.response_signal.connect do |response|
       next unless response == -3
-      # Hashbrown.reset(true)
-      Hashbrown.reset_feedback
+      # Collision.reset(true)
+      Collision.reset_feedback
       generate_hashes(MAIN_FILE_CHOOSER_NATIVE.file.path.not_nil!.to_s)
     end
 
@@ -48,9 +48,9 @@ module Hashbrown
       end
     end
 
-    Hashbrown::Welcomer.init
-    Hashbrown::Compare.init
-    Hashbrown::Verify.init
+    Collision::Welcomer.init
+    Collision::Compare.init
+    Collision::Verify.init
 
     window.content = WINDOW_BOX
     window.present

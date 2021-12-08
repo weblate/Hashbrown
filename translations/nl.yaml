@@ -1,6 +1,6 @@
-## Dutch translations for dev.geopjr.Hashbrown package.
-## Copyright (C) 2021 dev.geopjr.Hashbrown'S COPYRIGHT HOLDER
-## This file is distributed under the same license as the dev.geopjr.Hashbrown package.
+## Dutch translations for dev.geopjr.Collision package.
+## Copyright (C) 2021 dev.geopjr.Collision'S COPYRIGHT HOLDER
+## This file is distributed under the same license as the dev.geopjr.Collision package.
 ## Heimen Stoffels <vistausss@fastmail.com>, 2021.
 
 ## Last-Translator: Heimen Stoffels <vistausss@fastmail.com>
@@ -25,8 +25,8 @@ Menu: Menu
 # Menu item that opens a browser window to a hash function comparison table.
 Compare Hash Functions: Controlesomfucties vergelijken
 # Menu item that opens the about dialog.
-# Don't translate "Hashbrown".
-About Hashbrown: Over Hashbrown
+# Don't translate "Collision".
+About Collision: Over Collision
 # Tooltip for button & title for row.
 Verify: Verifiëren
 # Subtitle for row.

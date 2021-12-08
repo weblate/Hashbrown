@@ -1,9 +1,9 @@
 {
-  "app-id": "dev.geopjr.Hashbrown",
+  "app-id": "dev.geopjr.Collision",
   "runtime": "org.gnome.Platform",
   "runtime-version": "41",
   "sdk": "org.gnome.Sdk",
-  "command": "hashbrown",
+  "command": "collision",
   "finish-args": [
     "--socket=wayland",
     "--socket=fallback-x11",
@@ -76,17 +76,17 @@
       ]
     },
     {
-      "name": "hashbrown",
+      "name": "collision",
       "buildsystem": "simple",
       "build-commands": [
-        "./crystal/bin/crystal build ./src/hashbrown.cr # --no-debug --release"
+        "./crystal/bin/crystal build ./src/collision.cr # --no-debug --release"
       ],
       "post-install": [
-        "install -D -m 0755 hashbrown /app/bin/hashbrown",
-        "install -D -m 0644 extra/Hashbrown.desktop /app/share/applications/dev.geopjr.Hashbrown.desktop",
-        "install -D -m 0644 extra/icons/logo.svg /app/share/icons/hicolor/scalable/apps/dev.geopjr.Hashbrown.svg",
-        "install -D -m 0644 extra/icons/symbolic.svg /app/share/icons/hicolor/symbolic/apps/dev.geopjr.Hashbrown-symbolic.svg",
-        "install -D -m 0644 extra/dev.geopjr.Hashbrown.metainfo.xml /app/share/metainfo/dev.geopjr.Hashbrown.metainfo.xml"
+        "install -D -m 0755 collision /app/bin/collision",
+        "install -D -m 0644 extra/Collision.desktop /app/share/applications/dev.geopjr.Collision.desktop",
+        "install -D -m 0644 extra/icons/logo.svg /app/share/icons/hicolor/scalable/apps/dev.geopjr.Collision.svg",
+        "install -D -m 0644 extra/icons/symbolic.svg /app/share/icons/hicolor/symbolic/apps/dev.geopjr.Collision-symbolic.svg",
+        "install -D -m 0644 extra/dev.geopjr.Collision.metainfo.xml /app/share/metainfo/dev.geopjr.Collision.metainfo.xml"
       ],
       "sources": [
         {

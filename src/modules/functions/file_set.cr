@@ -1,6 +1,6 @@
 # Resets the window after a main file set
 
-module Hashbrown
+module Collision
   extend self
 
   HASH_LIST_TITLE = TRANSLATIONS[CURRENT_LANGUAGE]["Hashes"]

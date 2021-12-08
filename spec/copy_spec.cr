@@ -3,7 +3,7 @@ require "../src/modules/functions/generate_hash.cr"
 
 describe "run_cmd" do
   it "runs a command in shell and returns the output" do
-    output = Hashbrown.run_cmd("echo", ["test"])
+    output = Collision.run_cmd("echo", ["test"])
 
     output.should eq("test\n")
   end
@@ -14,7 +14,7 @@ describe "run_cmd" do
     channel = Channel(Hash(String, String)).new
 
     ["sha512", "sha256", "md5", "sha1"].each do |x|
-      spawn(Hashbrown.calculate_hash(x, path.to_s, channel))
+      spawn(Collision.calculate_hash(x, path.to_s, channel))
       hashes << channel.receive[x.upcase]
     end
 

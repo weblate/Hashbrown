@@ -1,4 +1,4 @@
-module Hashbrown
+module Collision
   module Compare
     extend self
 
@@ -11,12 +11,12 @@ module Hashbrown
         next unless response == -3
 
         channel = Channel(Hash(String, String)).new
-        spawn(Hashbrown.calculate_hash("sha256", TOOL_COMPARE_FILE_CHOOSER_NATIVE.file.path.to_s, channel))
+        spawn(Collision.calculate_hash("sha256", TOOL_COMPARE_FILE_CHOOSER_NATIVE.file.path.to_s, channel))
 
         compareFileSHA256 = channel.receive["SHA256"]
         result = CLIPBOARD_HASH["SHA256"] == compareFileSHA256
 
-        TOOL_COMPARE_ROW.icon_name = Hashbrown.icon(result)
+        TOOL_COMPARE_ROW.icon_name = Collision.icon(result)
       end
     end
   end

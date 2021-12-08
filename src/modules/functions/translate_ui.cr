@@ -12,10 +12,10 @@
 # ## enough and there are not enough strings to have an impact in memory, speed
 # ## or size
 
-module Hashbrown
+module Collision
   extend self
 
   def translate(ui : String, lang_code : String? = CURRENT_LANGUAGE) : String
-    ui.gsub(/HASHBROWN_\(.+\)/) { |s| TRANSLATIONS[lang_code][s[11..-2]] }
+    ui.gsub(/COLLISION_\(.+\)/) { |s| TRANSLATIONS[lang_code][s[11..-2]] }
   end
 end

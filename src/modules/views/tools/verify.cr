@@ -1,4 +1,4 @@
-module Hashbrown
+module Collision
   module Verify
     extend self
 
@@ -6,7 +6,7 @@ module Hashbrown
       TOOL_VERIFY_BUTTON.clicked_signal.connect do
         input = TOOL_VERIFY_INPUT.buffer.text
         result = CLIPBOARD_HASH.values.includes?(input)
-        TOOL_VERIFY_ROW.icon_name = Hashbrown.icon(result)
+        TOOL_VERIFY_ROW.icon_name = Collision.icon(result)
       end
     end
   end

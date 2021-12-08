@@ -14,11 +14,11 @@ OptionParser.parse do |parser|
   parser.on "-l LANG", "--lang=LANG", "The lang yaml to parse" do |lang|
     next if lang.downcase == "en"
     lang_file = lang.downcase.ends_with?(".yaml") ? lang : lang + ".yaml"
-    exit if lang_file == "hashbrown.yaml" || !File.exists?(Path[TRANSLATION_DIR_NAME].join(lang_file))
+    exit if lang_file == "collision.yaml" || !File.exists?(Path[TRANSLATION_DIR_NAME].join(lang_file))
   end
 end
 
-lang_file = "hashbrown.yaml" if lang_file == "en"
+lang_file = "collision.yaml" if lang_file == "en"
 
 translation_path = Path[TRANSLATION_DIR_NAME].join(lang_file)
 translation_yaml = File.open(translation_path) do |file|

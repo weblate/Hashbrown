@@ -1,5 +1,5 @@
-## Indonesian translations for Hashbrown.
-## Copyright (C) 2021 Hashbrown
+## Indonesian translations for Collision.
+## Copyright (C) 2021 Collision
 ## This file is distributed under the same license as the PACKAGE package.
 ## Kukuh Syafaat <kukuhsyafaat@gnome.org>, 2021.
 
@@ -25,8 +25,8 @@ Menu: Menu
 # Menu item that opens a browser window to a hash function comparison table.
 Compare Hash Functions: Bandingkan Fungsi Hash
 # Menu item that opens the about dialog.
-# Don't translate "Hashbrown".
-About Hashbrown: Tentang Hashbrown
+# Don't translate "Collision".
+About Collision: Tentang Collision
 # Tooltip for button & title for row.
 Verify: Verifikasi
 # Subtitle for row.
